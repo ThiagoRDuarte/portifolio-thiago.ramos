@@ -49,6 +49,7 @@ export default function GalaxyPortfolio() {
             <div className="hidden md:flex gap-8 text-sm uppercase tracking-wider">
               <a href="#sobre" className="hover:text-purple-400 transition">Sobre</a>
               <a href="#projetos" className="hover:text-purple-400 transition">Projetos</a>
+              <a href="#jornada" className="hover:text-purple-400 transition">Minha Jornada</a>
               <a href="#contato" className="hover:text-purple-400 transition">Contato</a>
             </div>
           </nav>
@@ -79,7 +80,7 @@ export default function GalaxyPortfolio() {
                 Currículo
               </a>
               <a
-                href="https://github.com/ThiagoRDuarte/SiteThiagoRamos"
+                href="curriculo.pdf"
                 target="_blank"
                 className="px-8 py-4 rounded-2xl border border-white/20 hover:border-purple-400 hover:bg-white/5 transition"
               >
@@ -109,17 +110,16 @@ export default function GalaxyPortfolio() {
                 com propósito.
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Sou estudante de Engenharia da Computação/Ciência da Computação,
+                Sou estudante de Ciência da Computação,
                 apaixonado por Inteligência Artificial, engenharia de software e
                 experiências digitais modernas.
               </p>
               <p className="text-gray-400 leading-relaxed mb-6">
-                Tenho foco no desenvolvimento de aplicações performáticas,
+                Tenho foco no desenvolvimento de aplicações fullstack,
                 interfaces futuristas e soluções utilizando IA e visão computacional.
               </p>
               <p className="text-gray-400 leading-relaxed">
-                Meu objetivo é transformar ideias complexas em experiências digitais
-                sofisticadas e impactantes.
+                Meu objetivo é transformar problemas complexos em soluções digitais Inteligentes.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -129,8 +129,6 @@ export default function GalaxyPortfolio() {
                 'TypeScript',
                 'Python',
                 'Node.js',
-                'Deep Learning',
-                'OpenCV',
                 'TensorFlow',
               ].map((skill) => (
                 <div

@@ -4,37 +4,51 @@ import { motion } from 'framer-motion';
 
 const timeline = [
   {
-    year: '2023',
+    year: '2021',
     title: 'Início na programação',
     description:
-      'Primeiros estudos em desenvolvimento de software e lógica de programação.',
+      'Primeiros estudos em lógica de programação e linguagens básicas.',
+  },
+
+  {
+    year: '2022',
+    title: 'Projetos FrontEnd',
+    description:
+      'Desenvolvimento de aplicações web responsivas utilizando frameworks como bootstrap.',
+  },
+
+  {
+    year: '2023',
+    title: 'Fullstack',
+    description:
+      'Criação de plataformas modernas utilizando React e Node.js.',
   },
 
   {
     year: '2024',
-    title: 'Projetos Fullstack',
+    title: 'Soft skills',
     description:
-      'Desenvolvimento de aplicações web modernas utilizando React e Node.js.',
+      'Estudos relacionados a ferramentas de otimização e organização tais como Git, Scrum, XP.',
   },
 
-  {
+   {
     year: '2025',
-    title: 'Inteligência Artificial',
+    title: 'Inteligência Artifical.',
     description:
       'Estudos avançados em Deep Learning, CNNs e Visão Computacional.',
   },
 
-  {
+   {
     year: '2026',
     title: 'Portfólio e projetos avançados',
     description:
-      'Criação de projetos profissionais focados em IA e engenharia de software.',
+      'Criação de projetos profissionais focados em técnologias modernas e atuais',
   },
 ];
 
 export default function Timeline() {
   return (
-    <section className="py-32 px-6 relative">
+    <section  id="jornada" className="py-32 px-6 relative">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-20">
           <p className="uppercase tracking-[0.3em] text-purple-400 mb-4">
