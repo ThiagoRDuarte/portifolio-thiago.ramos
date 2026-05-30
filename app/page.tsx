@@ -1,7 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 import SpaceBackground from '@/components/SpaceBackgroud';
 import Nebula from '@/components/Nebula';
 import Timeline from '@/components/Timeline';
