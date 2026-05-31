@@ -44,7 +44,7 @@ export default function GalaxyPortfolio() {
             <h1 className="text-2xl font-bold tracking-widest text-white">
               THIAGO<span className="text-purple-400">RAMOS</span>
             </h1>
-            <div className="hidden md:flex gap-8 text-sm uppercase tracking-wider">
+            <div className="hidden md:flex gap-8 text-sm tracking-wider">
               <a href="#sobre" className="hover:text-purple-400 transition">Sobre</a>
               <a href="#projetos" className="hover:text-purple-400 transition">Projetos</a>
               <a href="#jornada" className="hover:text-purple-400 transition">Minha Jornada</a>
@@ -64,6 +64,9 @@ export default function GalaxyPortfolio() {
                   {' '}Experiências
                 </span>
               </h1>
+              <p className="mt-6 max-w-xl text-base md:text-lg text-gray-300 leading-relaxed">
+                  Transformando problemas em soluções inovadoras e tecnológicas.            
+              </p>
             </div>
 
             {/* Lado Direito - Espaço para Desenho Gráfico */}
