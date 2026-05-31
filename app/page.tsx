@@ -54,43 +54,53 @@ export default function GalaxyPortfolio() {
         </header>
 
         {/* Hero Section */}
-        <section className="min-h-screen flex items-center justify-center px-6 text-center">
-          <div className="max-w-4xl">
-            <p className="uppercase tracking-[0.4em] text-purple-400 mb-6 text-sm">
-              Portfólio Desenvolvedor
-            </p>
-            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-              Construindo
-              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                {' '}Experiências
-              </span>
-            </h1>
-            <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
-              Desenvolvedor focado em Python e interfaces modernas.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="/curriculo.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 rounded-2xl bg-purple-600 hover:bg-purple-500 transition font-semibold shadow-lg shadow-purple-500/30"
-              >
-                Currículo
-              </a>
-              <a
-                href="curriculo.pdf"
-                target="_blank"
-                className="px-8 py-4 rounded-2xl border border-white/20 hover:border-purple-400 hover:bg-white/5 transition"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/thiago-ramos-33316722b/"
-                target="_blank"
-                className="px-8 py-4 rounded-2xl border border-white/20 hover:border-blue-400 hover:bg-white/5 transition"
-              >
-                LinkedIn
-              </a>
+        <section className="min-h-screen flex items-center justify-center px-6">
+          <div className="max-w-7xl w-full grid md:grid-cols-2 gap-6 items-center">
+            {/* Lado Esquerdo */}
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="text-5xl md:text-7xl font-black leading-tight">
+                Construindo
+                <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                  {' '}Experiências
+                </span>
+              </h1>
+            </div>
+
+            {/* Lado Direito - Espaço para Desenho Gráfico */}
+            <div className="hidden md:flex items-center justify-center">
+              <div className="w-full aspect-square rounded-3xl flex items-center justify-center">
+                <img 
+                  src="icone.png" 
+                  alt="Graphic Design" 
+                  className="w-full h-full object-contain p-8"
+                />
+              </div>
+            </div>
+            <div className="md:col-span-2 flex justify-center -mt-20">
+              <div className="flex flex-wrap gap-4 justify-center">
+                <a
+                  href="/curriculo.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 rounded-2xl bg-purple-600 hover:bg-purple-500 transition font-semibold shadow-lg shadow-purple-500/30"
+                >
+                  Currículo
+                </a>
+                <a
+                  href="curriculo.pdf"
+                  target="_blank"
+                  className="px-8 py-4 rounded-2xl border border-white/20 hover:border-purple-400 hover:bg-white/5 transition"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/thiago-ramos-33316722b/"
+                  target="_blank"
+                  className="px-8 py-4 rounded-2xl border border-white/20 hover:border-blue-400 hover:bg-white/5 transition"
+                >
+                  LinkedIn
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -120,22 +130,33 @@ export default function GalaxyPortfolio() {
                 Meu objetivo é transformar problemas complexos em soluções digitais Inteligentes.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                'React',
-                'Next.js',
-                'TypeScript',
-                'Python',
-                'Node.js',
-                'TensorFlow',
-              ].map((skill) => (
-                <div
-                  key={skill}
-                  className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:scale-105 hover:border-purple-500/50 transition duration-300"
-                >
-                  <h3 className="text-lg font-semibold">{skill}</h3>
+            <div className="flex flex-col items-center justify-center">
+              <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-2xl shadow-purple-500/20 mb-8">
+                <div className="w-full h-full bg-gradient-to-br from-purple-600/20 to-blue-600/20 flex items-center justify-center">
+                  <img 
+                    src="thiago-ramos.jpeg" 
+                    alt="Thiago Ramos" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              ))}
+              </div>
+              <div className="grid grid-cols-2 gap-6 w-full">
+                {[
+                  'React',
+                  'Next.js',
+                  'TypeScript',
+                  'Python',
+                  'Node.js',
+                  'TensorFlow',
+                ].map((skill) => (
+                  <div
+                    key={skill}
+                    className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:scale-105 hover:border-purple-500/50 transition duration-300"
+                  >
+                    <h3 className="text-lg font-semibold">{skill}</h3>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
