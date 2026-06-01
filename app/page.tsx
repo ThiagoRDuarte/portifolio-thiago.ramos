@@ -74,7 +74,7 @@ export default function GalaxyPortfolio() {
 
               {/* Lado Direito - Espaço para Desenho Gráfico */}
               <div className="flex items-center justify-center">
-                <div className="w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 lg:w-[640px] lg:h-[640px] rounded-3xl flex items-center justify-center">
+                <div className="w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[640px] lg:h-[640px] rounded-3xl flex items-center justify-center">
                   <img 
                     src="icone.png" 
                     alt="Graphic Design" 
