@@ -54,12 +54,12 @@ export default function GalaxyPortfolio() {
         </header>
 
         {/* Hero Section */}
-        <section className="min-h-[40vh] flex items-start justify-center px-6 pt-16 sm:pt-10 md:pt-6">
+          <section className="min-h-[40vh] flex items-center justify-center px-4 sm:px-6 pt-16 sm:pt-10 md:pt-6">
           <div className="max-w-7xl w-full">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
               {/* Lado Esquerdo */}
-              <div className="flex flex-col items-start justify-center text-left">
-                <h1 className="text-5xl md:text-7xl font-black leading-tight">
+              <div className="flex flex-col items-center md:items-start justify-center text-center md:text-left">
+                <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
                   Construindo
                   <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                     {' '}Experiências
@@ -73,18 +73,18 @@ export default function GalaxyPortfolio() {
               </div>
 
               {/* Lado Direito - Espaço para Desenho Gráfico */}
-              <div className="hidden md:flex items-center justify-center">
-                <div className="w-80 h-80 md:w-[640px] md:h-[640px] rounded-3xl flex items-center justify-center">
+              <div className="flex items-center justify-center">
+                <div className="w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 lg:w-[640px] lg:h-[640px] rounded-3xl flex items-center justify-center">
                   <img 
                     src="icone.png" 
                     alt="Graphic Design" 
-                    className="w-full h-full object-contain p-4"
+                    className="w-full h-full object-contain p-2 md:p-4"
                   />
                 </div>
               </div>
             </div>
             {/* Botões centralizados abaixo do grid */}
-            <div className="flex flex-wrap gap-4 justify-center mt-4">
+            <div className="flex flex-wrap gap-4 justify-center w-full mt-6 md:mt-3">
               <a
                 href="/curriculo.pdf"
                 target="_blank"
