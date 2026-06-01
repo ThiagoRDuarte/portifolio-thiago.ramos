@@ -80,26 +80,26 @@ export default function GalaxyPortfolio() {
               </div>
             </div>
             <div className="md:col-span-2 flex justify-center -mt-20">
-              <div className="flex flex-wrap gap-4 justify-center">
+              <div className="flex flex-wrap gap-2 md:gap-4 justify-center">
                 <a
                   href="/curriculo.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 rounded-2xl bg-purple-600 hover:bg-purple-500 transition font-semibold shadow-lg shadow-purple-500/30"
+                  className="px-4 py-2 md:px-8 md:py-4 text-sm md:text-base rounded-2xl bg-purple-600 hover:bg-purple-500 transition font-semibold shadow-lg shadow-purple-500/30 whitespace-nowrap"
                 >
                   Currículo
                 </a>
                 <a
                   href="curriculo.pdf"
                   target="_blank"
-                  className="px-8 py-4 rounded-2xl border border-white/20 hover:border-purple-400 hover:bg-white/5 transition"
+                  className="px-4 py-2 md:px-8 md:py-4 text-sm md:text-base rounded-2xl border border-white/20 hover:border-purple-400 hover:bg-white/5 transition whitespace-nowrap"
                 >
                   GitHub
                 </a>
                 <a
                   href="https://www.linkedin.com/in/thiago-ramos-33316722b/"
                   target="_blank"
-                  className="px-8 py-4 rounded-2xl border border-white/20 hover:border-blue-400 hover:bg-white/5 transition"
+                  className="px-4 py-2 md:px-8 md:py-4 text-sm md:text-base rounded-2xl border border-white/20 hover:border-blue-400 hover:bg-white/5 transition whitespace-nowrap"
                 >
                   LinkedIn
                 </a>
@@ -220,24 +220,24 @@ export default function GalaxyPortfolio() {
             <p className="text-gray-300 text-lg mb-12">
               Entre em contato.
             </p>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-2 md:gap-6">
               <a
                 href="mailto:thiago.duarte2004@yahoo.com"
-                className="px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/20 transition"
+                className="px-4 py-2 md:px-8 md:py-4 text-sm md:text-base rounded-2xl bg-white/10 hover:bg-white/20 transition whitespace-nowrap"
               >
                 Email
               </a>
               <a
                 href="https://github.com/ThiagoRDuarte/SiteThiagoRamos"
                 target="_blank"
-                className="px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/20 transition"
+                className="px-4 py-2 md:px-8 md:py-4 text-sm md:text-base rounded-2xl bg-white/10 hover:bg-white/20 transition whitespace-nowrap"
               >
                 GitHub
               </a>
               <a
                 href="https://www.linkedin.com/in/thiago-ramos-33316722b/"
                 target="_blank"
-                className="px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/20 transition"
+                className="px-4 py-2 md:px-8 md:py-4 text-sm md:text-base rounded-2xl bg-white/10 hover:bg-white/20 transition whitespace-nowrap"
               >
                 LinkedIn
               </a>
