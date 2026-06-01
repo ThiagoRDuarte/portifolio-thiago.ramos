@@ -54,56 +54,61 @@ export default function GalaxyPortfolio() {
         </header>
 
         {/* Hero Section */}
-        <section className="min-h-screen flex items-center justify-center px-6">
-          <div className="max-w-7xl w-full grid md:grid-cols-2 gap-6 items-center">
-            {/* Lado Esquerdo */}
-            <div className="flex flex-col items-center justify-center text-center">
-              <h1 className="text-5xl md:text-7xl font-black leading-tight">
-                Construindo
-                <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  {' '}Experiências
-                </span>
-              </h1>
-              <p className="mt-6 max-w-xl text-base md:text-lg text-gray-300 leading-relaxed">
-                  Transformando problemas em soluções inovadoras e tecnológicas.            
-              </p>
-            </div>
+        <section className="min-h-[40vh] flex items-start justify-center px-6 pt-16 sm:pt-10 md:pt-6">
+          <div className="max-w-7xl w-full">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Lado Esquerdo */}
+              <div className="flex flex-col items-start justify-center text-left">
+                <h1 className="text-5xl md:text-7xl font-black leading-tight">
+                  Construindo
+                  <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                    {' '}Experiências
+                  </span>
+                </h1>
+                <p className="mt-6 max-w-xl text-base md:text-lg text-gray-300 leading-relaxed">
+                    Transformando problemas em soluções inovadoras e tecnológicas.            
+                </p>
+                
+                {/* Os botões foram movidos para abaixo do grid para centralizar na página */}
+              </div>
 
-            {/* Lado Direito - Espaço para Desenho Gráfico */}
-            <div className="hidden md:flex items-center justify-center">
-              <div className="w-full aspect-square rounded-3xl flex items-center justify-center">
-                <img 
-                  src="icone.png" 
-                  alt="Graphic Design" 
-                  className="w-full h-full object-contain p-8"
-                />
+              {/* Lado Direito - Espaço para Desenho Gráfico */}
+              <div className="hidden md:flex items-center justify-center">
+                <div className="w-80 h-80 md:w-[640px] md:h-[640px] rounded-3xl flex items-center justify-center">
+                  <img 
+                    src="icone.png" 
+                    alt="Graphic Design" 
+                    className="w-full h-full object-contain p-4"
+                  />
+                </div>
               </div>
             </div>
-            <div className="md:col-span-2 flex justify-center -mt-20">
-              <div className="flex flex-wrap gap-2 md:gap-4 justify-center">
-                <a
-                  href="/curriculo.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 md:px-8 md:py-4 text-sm md:text-base rounded-2xl bg-purple-600 hover:bg-purple-500 transition font-semibold shadow-lg shadow-purple-500/30 whitespace-nowrap"
-                >
-                  Currículo
-                </a>
-                <a
-                  href="curriculo.pdf"
-                  target="_blank"
-                  className="px-4 py-2 md:px-8 md:py-4 text-sm md:text-base rounded-2xl border border-white/20 hover:border-purple-400 hover:bg-white/5 transition whitespace-nowrap"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/thiago-ramos-33316722b/"
-                  target="_blank"
-                  className="px-4 py-2 md:px-8 md:py-4 text-sm md:text-base rounded-2xl border border-white/20 hover:border-blue-400 hover:bg-white/5 transition whitespace-nowrap"
-                >
-                  LinkedIn
-                </a>
-              </div>
+            {/* Botões centralizados abaixo do grid */}
+            <div className="flex flex-wrap gap-4 justify-center mt-4">
+              <a
+                href="/curriculo.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-2xl bg-purple-600 hover:bg-purple-500 transition font-semibold shadow-lg shadow-purple-500/30"
+              >
+                Currículo
+              </a>
+              <a
+                href="https://github.com/ThiagoRDuarte/SiteThiagoRamos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-2xl border border-white/20 hover:border-purple-400 hover:bg-white/5 transition"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/thiago-ramos-33316722b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-2xl border border-white/20 hover:border-blue-400 hover:bg-white/5 transition"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         </section>
